@@ -1,0 +1,202 @@
+[
+    {
+        "languageImage": "path/to/language1.jpg",
+        "foreignLanguageName": "Spanish",
+        "teacherImage": "path/to/teacher1.jpg",
+        "teacherName": "Maria Rodriguez",
+        "courseEnrollDeadline": "2023-07-15",
+        "courseDetails": "This course is designed for beginners and covers the basics of Spanish grammar, vocabulary, and conversation.",
+        "rating": 4.5,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language2.jpg",
+        "foreignLanguageName": "French",
+        "teacherImage": "path/to/teacher2.jpg",
+        "teacherName": "Jean-Pierre Dubois",
+        "courseEnrollDeadline": "2023-07-20",
+        "courseDetails": "Immerse yourself in the French language and culture with this intermediate-level course. Enhance your speaking, listening, reading, and writing skills.",
+        "rating": 4.8,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language3.jpg",
+        "foreignLanguageName": "German",
+        "teacherImage": "path/to/teacher3.jpg",
+        "teacherName": "Hans Müller",
+        "courseEnrollDeadline": "2023-07-10",
+        "courseDetails": "Join this advanced German course to refine your language proficiency. Focus on complex grammar structures, idiomatic expressions, and cultural nuances.",
+        "rating": 4.7,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language4.jpg",
+        "foreignLanguageName": "Italian",
+        "teacherImage": "path/to/teacher4.jpg",
+        "teacherName": "Giulia Rossi",
+        "courseEnrollDeadline": "2023-07-18",
+        "courseDetails": "Discover the beauty of the Italian language and learn to speak fluently through interactive lessons and cultural activities.",
+        "rating": 4.6,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language5.jpg",
+        "foreignLanguageName": "Mandarin Chinese",
+        "teacherImage": "path/to/teacher5.jpg",
+        "teacherName": "Li Wei",
+        "courseEnrollDeadline": "2023-07-12",
+        "courseDetails": "Master the complexities of Mandarin Chinese with our comprehensive course designed for both beginners and intermediate learners.",
+        "rating": 4.9,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language6.jpg",
+        "foreignLanguageName": "Japanese",
+        "teacherImage": "path/to/teacher6.jpg",
+        "teacherName": "Takashi Yamamoto",
+        "courseEnrollDeadline": "2023-07-25",
+        "courseDetails": "Experience the rich culture and master the Japanese language through our immersive course taught by native-speaking instructors.",
+        "rating": 4.7,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language7.jpg",
+        "foreignLanguageName": "Portuguese",
+        "teacherImage": "path/to/teacher7.jpg",
+        "teacherName": "Ana Silva",
+        "courseEnrollDeadline": "2023-07-16",
+        "courseDetails": "Explore the beauty of Portuguese language and culture with our dynamic and interactive course tailored for all levels of learners.",
+        "rating": 4.4,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language8.jpg",
+        "foreignLanguageName": "Russian",
+        "teacherImage": "path/to/teacher8.jpg",
+        "teacherName": "Dmitry Ivanov",
+        "courseEnrollDeadline": "2023-07-22",
+        "courseDetails": "Embark on a journey to master the Russian language and dive into the rich literary and cultural heritage of Russia.",
+        "rating": 4.6,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language9.jpg",
+        "foreignLanguageName": "Arabic",
+        "teacherImage": "path/to/teacher9.jpg",
+        "teacherName": "Fatima Khalid",
+        "courseEnrollDeadline": "2023-07-17",
+        "courseDetails": "Learn the fascinating Arabic language and gain insights into the traditions, customs, and history of the Arab world.",
+        "rating": 4.3,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language10.jpg",
+        "foreignLanguageName": "Korean",
+        "teacherImage": "path/to/teacher10.jpg",
+        "teacherName": "Seo Yeon-ji",
+        "courseEnrollDeadline": "2023-07-14",
+        "courseDetails": "Immerse yourself in the Korean language and delve into the vibrant K-pop culture with our engaging and interactive course.",
+        "rating": 4.5,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language11.jpg",
+        "foreignLanguageName": "Swahili",
+        "teacherImage": "path/to/teacher11.jpg",
+        "teacherName": "Mwana Simba",
+        "courseEnrollDeadline": "2023-07-19",
+        "courseDetails": "Discover the melodious Swahili language and explore the diverse cultures of East Africa through our comprehensive course.",
+        "rating": 4.2,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language12.jpg",
+        "foreignLanguageName": "Hindi",
+        "teacherImage": "path/to/teacher12.jpg",
+        "teacherName": "Rajesh Kapoor",
+        "courseEnrollDeadline": "2023-07-23",
+        "courseDetails": "Immerse yourself in the enchanting world of Hindi language and gain proficiency in speaking, reading, and writing.",
+        "rating": 4.4,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language13.jpg",
+        "foreignLanguageName": "Greek",
+        "teacherImage": "path/to/teacher13.jpg",
+        "teacherName": "Sophia Papadopoulos",
+        "courseEnrollDeadline": "2023-07-11",
+        "courseDetails": "Embark on a linguistic and cultural journey with our Greek course, uncovering the ancient and modern aspects of this captivating language.",
+        "rating": 4.3,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language14.jpg",
+        "foreignLanguageName": "Dutch",
+        "teacherImage": "path/to/teacher14.jpg",
+        "teacherName": "Pieter van der Berg",
+        "courseEnrollDeadline": "2023-07-21",
+        "courseDetails": "Learn the Dutch language and immerse yourself in the vibrant Dutch culture through interactive lessons and real-life conversations.",
+        "rating": 4.1,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language15.jpg",
+        "foreignLanguageName": "Swedish",
+        "teacherImage": "path/to/teacher15.jpg",
+        "teacherName": "Elsa Andersson",
+        "courseEnrollDeadline": "2023-07-13",
+        "courseDetails": "Embark on a linguistic journey to master the Swedish language and explore the rich cultural heritage of Sweden.",
+        "rating": 4.2,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language16.jpg",
+        "foreignLanguageName": "Turkish",
+        "teacherImage": "path/to/teacher16.jpg",
+        "teacherName": "Ayşe Kaya",
+        "courseEnrollDeadline": "2023-07-26",
+        "courseDetails": "Immerse yourself in the beauty of the Turkish language and discover the historical and modern aspects of Turkish culture.",
+        "rating": 4.3,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language17.jpg",
+        "foreignLanguageName": "Thai",
+        "teacherImage": "path/to/teacher17.jpg",
+        "teacherName": "Sawadee Tanapat",
+        "courseEnrollDeadline": "2023-07-16",
+        "courseDetails": "Learn to speak, read, and write Thai with our immersive course that takes you through the linguistic and cultural nuances of Thailand.",
+        "rating": 4.1,
+        "topRated": true
+    },
+    {
+        "languageImage": "path/to/language18.jpg",
+        "foreignLanguageName": "Polish",
+        "teacherImage": "path/to/teacher18.jpg",
+        "teacherName": "Karolina Nowak",
+        "courseEnrollDeadline": "2023-07-24",
+        "courseDetails": "Explore the fascinating Polish language and dive into the rich history and traditions of Poland through our interactive course.",
+        "rating": 4.2,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language19.jpg",
+        "foreignLanguageName": "Hebrew",
+        "teacherImage": "path/to/teacher19.jpg",
+        "teacherName": "David Cohen",
+        "courseEnrollDeadline": "2023-07-09",
+        "courseDetails": "Discover the ancient and modern aspects of the Hebrew language, along with the cultural significance of Israel.",
+        "rating": 4.3,
+        "topRated": false
+    },
+    {
+        "languageImage": "path/to/language20.jpg",
+        "foreignLanguageName": "Vietnamese",
+        "teacherImage": "path/to/teacher20.jpg",
+        "teacherName": "Nguyen Tran",
+        "courseEnrollDeadline": "2023-07-27",
+        "courseDetails": "Learn Vietnamese and delve into the rich cultural heritage of Vietnam through our engaging and interactive course.",
+        "rating": 4.1,
+        "topRated": true
+    }
+]
