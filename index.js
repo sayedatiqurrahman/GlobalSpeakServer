@@ -33,7 +33,6 @@ async function run() {
         // routes
         app.get('/', async (req, res) => {
             const Language = await LanguageCollection.find({}).toArray()
-
             res.send(Language)
         })
 
