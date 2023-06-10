@@ -30,12 +30,17 @@ async function run() {
         client.connect();
         // Send a ping to confirm a successful connection
         const LanguageCollection = client.db('SummerCamp').collection('Languages');
+        const TestimonialsCollection = client.db('SummerCamp').collection('Testimonials');
         // routes
         app.get('/', async (req, res) => {
             const Language = await LanguageCollection.find({}).toArray()
             res.send(Language)
         })
 
+        app.get('/testimonials', async (req, res) => {
+            const testimonials = await TestimonialsCollection.find({}).toArray()
+            res.send(testimonials)
+        })
 
 
         // await client.db("admin").command({ ping: 1 });
