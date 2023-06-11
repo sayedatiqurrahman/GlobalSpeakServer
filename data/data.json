@@ -10,7 +10,8 @@
         "topRated": true,
         "numberOfStudents": 50,
         "email": "mariarodriguez@gmail.com",
-        "availableSeat": 35
+        "availableSeat": 35,
+        "price": 40
     },
     {
         "languageImage": "https://i.ibb.co/tHdw4r3/french2.jpg",
@@ -23,7 +24,8 @@
         "topRated": false,
         "numberOfStudents": 45,
         "email": "jeanpierredubois@gmail.com",
-        "availableSeat": 5
+        "availableSeat": 5,
+        "price": 45
     },
     {
         "languageImage": "https://i.ibb.co/hgntJ0Y/images.jpg",
@@ -36,7 +38,8 @@
         "topRated": false,
         "numberOfStudents": 55,
         "email": "hansmueller@gmail.com",
-        "availableSeat": 1
+        "availableSeat": 1,
+        "price": 70
     },
     {
         "languageImage": "https://i.ibb.co/D1pTJ2k/italian-language-represents-italy-foreign-and-text.jpg",
@@ -49,7 +52,8 @@
         "topRated": true,
         "numberOfStudents": 40,
         "email": "giuliarossi@gmail.com",
-        "availableSeat": 10
+        "availableSeat": 10,
+        "price": 30
     },
     {
         "languageImage": "https://i.ibb.co/ZMd2cHY/istockphoto-1151420798-612x612.jpg",
@@ -62,7 +66,8 @@
         "topRated": true,
         "numberOfStudents": 60,
         "email": "liwei@gmail.com",
-        "availableSeat": 0
+        "availableSeat": 0,
+        "price": 50
     },
     {
         "languageImage": "https://i.ibb.co/XL1dLsQ/baka.webp",
@@ -75,7 +80,8 @@
         "topRated": true,
         "numberOfStudents": 35,
         "email": "sakuratanaka@gmail.com",
-        "availableSeat": 15
+        "availableSeat": 15,
+        "price": 35
     },
     {
         "languageImage": "https://i.ibb.co/68sKQDm/portuguese-language.jpg",
@@ -88,7 +94,8 @@
         "topRated": false,
         "numberOfStudents": 42,
         "email": "sakuratanaka@gmail.com",
-        "availableSeat": 8
+        "availableSeat": 8,
+        "price": 42
     },
     {
         "languageImage": "https://i.ibb.co/0B6xXgW/history-of-russian-language.jpg",
@@ -101,7 +108,8 @@
         "topRated": false,
         "numberOfStudents": 48,
         "email": "vladimirivanov@gmail.com",
-        "availableSeat": 2
+        "availableSeat": 2,
+        "price": 64
     },
     {
         "languageImage": "https://i.ibb.co/HB6ztst/https-verbling-user-uploads-s3-amazonaws-com-75736031415276259819-134fe6d9-35f7-49f7-9088-00d21599e5.jpg",
@@ -114,7 +122,8 @@
         "topRated": false,
         "numberOfStudents": 57,
         "email": "carlasilva@gmail.com",
-        "availableSeat": 2
+        "availableSeat": 2,
+        "price": 100
     },
     {
         "languageImage": "https://i.ibb.co/xJ85QGc/Korean-Language-Article-Removed-Image.webp",
@@ -127,7 +136,8 @@
         "topRated": false,
         "numberOfStudents": 52,
         "email": "ahmedhassan@gmail.com",
-        "availableSeat": 0
+        "availableSeat": 0,
+        "price": 75
     },
     {
         "languageImage": "https://i.ibb.co/ZdLjPbD/EZWnre-VXk-AEv9-e.png",
@@ -140,7 +150,8 @@
         "topRated": true,
         "numberOfStudents": 30,
         "email": "jihyekim@gmail.com",
-        "availableSeat": 0
+        "availableSeat": 0,
+        "price": 57
     },
     {
         "languageImage": "https://i.ibb.co/vDVQMkG/file74obx8ca0ll103lh3kg7-1590948172.jpg",
@@ -153,7 +164,8 @@
         "topRated": false,
         "numberOfStudents": 43,
         "email": "amitpatel@gmail.com",
-        "availableSeat": 7
+        "availableSeat": 7,
+        "price": 29
     },
     {
         "languageImage": "https://i.ibb.co/j6BJPDz/greek-language-1.jpg",
@@ -166,7 +178,8 @@
         "topRated": false,
         "numberOfStudents": 39,
         "email": "aysedemir@gmail.com",
-        "availableSeat": 11
+        "availableSeat": 11,
+        "price": 20
     },
     {
         "languageImage": "https://i.ibb.co/Dfx93Dn/dutch-language-phrases.png",
@@ -179,7 +192,8 @@
         "topRated": false,
         "numberOfStudents": 35,
         "email": "lottedevries@gmail.com",
-        "availableSeat": 5
+        "availableSeat": 5,
+        "price": 37
     },
     {
         "languageImage": "https://i.ibb.co/M6Hs8Dj/5bea8ec3fed08e503cb94cbf-swedish-language-pack-850.jpg",
@@ -192,7 +206,8 @@
         "topRated": false,
         "numberOfStudents": 40,
         "email": "erikandersson@gmail.com",
-        "availableSeat": 10
+        "availableSeat": 10,
+        "price": 46
     },
     {
         "languageImage": "https://i.ibb.co/Ldv8J5S/131fa4f8aaf903beb7000dd8f9ef64f77097bf42.webp",
@@ -205,7 +220,8 @@
         "topRated": true,
         "numberOfStudents": 70,
         "email": "sophiapapadopoulos@gmail.com",
-        "availableSeat": 0
+        "availableSeat": 0,
+        "price": 78
     },
     {
         "languageImage": "https://i.ibb.co/34RXMHy/How-To-Say-I-Love-You-In-4.png",
@@ -218,7 +234,8 @@
         "topRated": true,
         "numberOfStudents": 36,
         "email": "katarzynanowak@gmail.com",
-        "availableSeat": 4
+        "availableSeat": 4,
+        "price": 15
     },
     {
         "languageImage": "https://i.ibb.co/2Z4r0MF/polish-language-means-foreign-dialect-and-poland.jpg",
@@ -231,7 +248,8 @@
         "topRated": false,
         "numberOfStudents": 41,
         "email": "budisantoso@gmail.com",
-        "availableSeat": 9
+        "availableSeat": 9,
+        "price": 24
     },
     {
         "languageImage": "https://i.ibb.co/yYmYk5C/0-VFj-Wq-UWZi-W-Siv-FA.jpg",
@@ -244,7 +262,8 @@
         "topRated": false,
         "numberOfStudents": 37,
         "email": "nguyenminh@gmail.com",
-        "availableSeat": 13
+        "availableSeat": 13,
+        "price": 55
     },
     {
         "languageImage": "https://i.ibb.co/q9xRFzX/1665466981.png",
@@ -257,6 +276,7 @@
         "topRated": false,
         "numberOfStudents": 34,
         "email": "jannovak@gmail.com",
-        "availableSeat": 16
+        "availableSeat": 16,
+        "price": 10
     }
 ]

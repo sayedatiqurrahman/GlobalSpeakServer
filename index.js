@@ -3,11 +3,16 @@ const app = express()
 const cors = require('cors')
 const port = process.env.PORT || 5000
 require('dotenv').config()
+const jwt = require('jsonwebtoken');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // middleware
 app.use(cors())
 app.use(express.json())
+
+// const verifyJwt = () => {
+
+// } 
 
 const uri = 'mongodb://127.0.0.1:27017/'
 const client = new MongoClient(uri);
@@ -23,6 +28,9 @@ const client = new MongoClient(uri);
 //     }
 // });
 
+
+
+
 // mongodb function
 async function run() {
     try {
@@ -32,7 +40,17 @@ async function run() {
         const LanguageCollection = client.db('SummerCamp').collection('Languages');
         const TestimonialsCollection = client.db('SummerCamp').collection('Testimonials');
         const UsersCollection = client.db('SummerCamp').collection('Users');
+        const selectedClassesCollection = client.db('SummerCamp').collection('SelectedClasses');
+
         // routes
+        app.get('/jwt', (req, res) => {
+            const email = req.body;
+            const token = jwt.sign(email, `${process.env.ACCESS_TOKEN}`, { expiresIn: '1h' });
+            res.send(token);
+        })
+
+
+        // projects routes to get or post data 
         app.get('/', async (req, res) => {
             const Language = await LanguageCollection.find({}).toArray()
             res.send(Language)
@@ -64,10 +82,18 @@ async function run() {
         app.get('/user/:email', async (req, res) => {
             const query = { email: req.params.email }
             const filter = await UsersCollection.findOne(query)
-            const role = filter.role
-            console.log(role);
-            res.send(role)
+            res.send(filter)
         })
+
+
+        // Selected classes
+        app.post('/mySelectedClasses', async (req, res) => {
+            const classes = req.body
+            const result = await selectedClassesCollection.insertOne(classes)
+
+            res.send(result)
+        })
+
 
         // await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
