@@ -31,6 +31,7 @@ async function run() {
         // Send a ping to confirm a successful connection
         const LanguageCollection = client.db('SummerCamp').collection('Languages');
         const TestimonialsCollection = client.db('SummerCamp').collection('Testimonials');
+        const UsersCollection = client.db('SummerCamp').collection('Users');
         // routes
         app.get('/', async (req, res) => {
             const Language = await LanguageCollection.find({}).toArray()
@@ -42,6 +43,31 @@ async function run() {
             res.send(testimonials)
         })
 
+
+
+        // Users Data post/create
+        app.post('/user', async (req, res) => {
+            const user = req.body;
+            const email = user.email
+            const query = { email: email }
+            const inQuery = await UsersCollection.findOne(query)
+            if (inQuery) {
+                return
+            } else {
+                const result = await UsersCollection.insertOne(user)
+                res.send(result)
+            }
+
+
+        })
+
+        app.get('/user/:email', async (req, res) => {
+            const query = { email: req.params.email }
+            const filter = await UsersCollection.findOne(query)
+            const role = filter.role
+            console.log(role);
+            res.send(role)
+        })
 
         // await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");

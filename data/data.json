@@ -8,7 +8,9 @@
         "courseDetails": "This course is designed for beginners and covers the basics of Spanish grammar, vocabulary, and conversation.",
         "rating": 4.5,
         "topRated": true,
-        "numberOfStudents": 50
+        "numberOfStudents": 50,
+        "email": "mariarodriguez@gmail.com",
+        "availableSeat": 35
     },
     {
         "languageImage": "https://i.ibb.co/tHdw4r3/french2.jpg",
@@ -19,7 +21,9 @@
         "courseDetails": "Immerse yourself in the French language and culture with this intermediate-level course. Enhance your speaking, listening, reading, and writing skills.",
         "rating": 4.8,
         "topRated": false,
-        "numberOfStudents": 45
+        "numberOfStudents": 45,
+        "email": "jeanpierredubois@gmail.com",
+        "availableSeat": 5
     },
     {
         "languageImage": "https://i.ibb.co/hgntJ0Y/images.jpg",
@@ -30,7 +34,9 @@
         "courseDetails": "Join this advanced German course to refine your language proficiency. Focus on complex grammar structures, idiomatic expressions, and cultural nuances.",
         "rating": 4.7,
         "topRated": false,
-        "numberOfStudents": 55
+        "numberOfStudents": 55,
+        "email": "hansmueller@gmail.com",
+        "availableSeat": 1
     },
     {
         "languageImage": "https://i.ibb.co/D1pTJ2k/italian-language-represents-italy-foreign-and-text.jpg",
@@ -41,7 +47,9 @@
         "courseDetails": "Discover the beauty of the Italian language and learn to speak fluently through interactive lessons and cultural activities.",
         "rating": 4.6,
         "topRated": true,
-        "numberOfStudents": 40
+        "numberOfStudents": 40,
+        "email": "giuliarossi@gmail.com",
+        "availableSeat": 10
     },
     {
         "languageImage": "https://i.ibb.co/ZMd2cHY/istockphoto-1151420798-612x612.jpg",
@@ -52,7 +60,9 @@
         "courseDetails": "Master the complexities of Mandarin Chinese with our comprehensive course designed for both beginners and intermediate learners.",
         "rating": 4.9,
         "topRated": true,
-        "numberOfStudents": 60
+        "numberOfStudents": 60,
+        "email": "liwei@gmail.com",
+        "availableSeat": 0
     },
     {
         "languageImage": "https://i.ibb.co/XL1dLsQ/baka.webp",
@@ -63,7 +73,9 @@
         "courseDetails": "Experience the rich culture and master the Japanese language through our immersive course taught by native-speaking instructors.",
         "rating": 4.7,
         "topRated": true,
-        "numberOfStudents": 35
+        "numberOfStudents": 35,
+        "email": "sakuratanaka@gmail.com",
+        "availableSeat": 15
     },
     {
         "languageImage": "https://i.ibb.co/68sKQDm/portuguese-language.jpg",
@@ -74,7 +86,9 @@
         "courseDetails": "Explore the beauty of Portuguese language and culture with our dynamic and interactive course tailored for all levels of learners.",
         "rating": 4.4,
         "topRated": false,
-        "numberOfStudents": 42
+        "numberOfStudents": 42,
+        "email": "sakuratanaka@gmail.com",
+        "availableSeat": 8
     },
     {
         "languageImage": "https://i.ibb.co/0B6xXgW/history-of-russian-language.jpg",
@@ -85,7 +99,9 @@
         "courseDetails": "Embark on a journey to master the Russian language and dive into the rich literary and cultural heritage of Russia.",
         "rating": 4.6,
         "topRated": false,
-        "numberOfStudents": 48
+        "numberOfStudents": 48,
+        "email": "vladimirivanov@gmail.com",
+        "availableSeat": 2
     },
     {
         "languageImage": "https://i.ibb.co/HB6ztst/https-verbling-user-uploads-s3-amazonaws-com-75736031415276259819-134fe6d9-35f7-49f7-9088-00d21599e5.jpg",
@@ -96,7 +112,9 @@
         "courseDetails": "Learn the fascinating Arabic language and gain insights into the traditions, customs, and history of the Arab world.",
         "rating": 4.3,
         "topRated": false,
-        "numberOfStudents": 38
+        "numberOfStudents": 57,
+        "email": "carlasilva@gmail.com",
+        "availableSeat": 2
     },
     {
         "languageImage": "https://i.ibb.co/xJ85QGc/Korean-Language-Article-Removed-Image.webp",
@@ -107,7 +125,9 @@
         "courseDetails": "Immerse yourself in the Korean language and delve into the vibrant K-pop culture with our engaging and interactive course.",
         "rating": 4.5,
         "topRated": false,
-        "numberOfStudents": 52
+        "numberOfStudents": 52,
+        "email": "ahmedhassan@gmail.com",
+        "availableSeat": 0
     },
     {
         "languageImage": "https://i.ibb.co/ZdLjPbD/EZWnre-VXk-AEv9-e.png",
@@ -118,7 +138,9 @@
         "courseDetails": "Discover the melodious Swahili language and explore the diverse cultures of East Africa through our comprehensive course.",
         "rating": 4.2,
         "topRated": true,
-        "numberOfStudents": 30
+        "numberOfStudents": 30,
+        "email": "jihyekim@gmail.com",
+        "availableSeat": 0
     },
     {
         "languageImage": "https://i.ibb.co/vDVQMkG/file74obx8ca0ll103lh3kg7-1590948172.jpg",
@@ -129,7 +151,9 @@
         "courseDetails": "Immerse yourself in the enchanting world of Hindi language and gain proficiency in speaking, reading, and writing.",
         "rating": 4.4,
         "topRated": false,
-        "numberOfStudents": 43
+        "numberOfStudents": 43,
+        "email": "amitpatel@gmail.com",
+        "availableSeat": 7
     },
     {
         "languageImage": "https://i.ibb.co/j6BJPDz/greek-language-1.jpg",
@@ -140,7 +164,9 @@
         "courseDetails": "Embark on a linguistic and cultural journey with our Greek course, uncovering the ancient and modern aspects of this captivating language.",
         "rating": 4.3,
         "topRated": false,
-        "numberOfStudents": 39
+        "numberOfStudents": 39,
+        "email": "aysedemir@gmail.com",
+        "availableSeat": 11
     },
     {
         "languageImage": "https://i.ibb.co/Dfx93Dn/dutch-language-phrases.png",
@@ -151,7 +177,9 @@
         "courseDetails": "Learn the Dutch language and immerse yourself in the vibrant Dutch culture through interactive lessons and real-life conversations.",
         "rating": 4.1,
         "topRated": false,
-        "numberOfStudents": 35
+        "numberOfStudents": 35,
+        "email": "lottedevries@gmail.com",
+        "availableSeat": 5
     },
     {
         "languageImage": "https://i.ibb.co/M6Hs8Dj/5bea8ec3fed08e503cb94cbf-swedish-language-pack-850.jpg",
@@ -162,7 +190,9 @@
         "courseDetails": "Embark on a linguistic journey to master the Swedish language and explore the rich cultural heritage of Sweden.",
         "rating": 4.2,
         "topRated": false,
-        "numberOfStudents": 40
+        "numberOfStudents": 40,
+        "email": "erikandersson@gmail.com",
+        "availableSeat": 10
     },
     {
         "languageImage": "https://i.ibb.co/Ldv8J5S/131fa4f8aaf903beb7000dd8f9ef64f77097bf42.webp",
@@ -173,7 +203,9 @@
         "courseDetails": "Immerse yourself in the beauty of the Turkish language and discover the historical and modern aspects of Turkish culture.",
         "rating": 4.3,
         "topRated": true,
-        "numberOfStudents": 33
+        "numberOfStudents": 70,
+        "email": "sophiapapadopoulos@gmail.com",
+        "availableSeat": 0
     },
     {
         "languageImage": "https://i.ibb.co/34RXMHy/How-To-Say-I-Love-You-In-4.png",
@@ -184,7 +216,9 @@
         "courseDetails": "Learn to speak, read, and write Thai with our immersive course that takes you through the linguistic and cultural nuances of Thailand.",
         "rating": 4.1,
         "topRated": true,
-        "numberOfStudents": 36
+        "numberOfStudents": 36,
+        "email": "katarzynanowak@gmail.com",
+        "availableSeat": 4
     },
     {
         "languageImage": "https://i.ibb.co/2Z4r0MF/polish-language-means-foreign-dialect-and-poland.jpg",
@@ -195,7 +229,9 @@
         "courseDetails": "Explore the fascinating Polish language and dive into the rich history and traditions of Poland through our interactive course.",
         "rating": 4.2,
         "topRated": false,
-        "numberOfStudents": 41
+        "numberOfStudents": 41,
+        "email": "budisantoso@gmail.com",
+        "availableSeat": 9
     },
     {
         "languageImage": "https://i.ibb.co/yYmYk5C/0-VFj-Wq-UWZi-W-Siv-FA.jpg",
@@ -206,7 +242,9 @@
         "courseDetails": "Discover the ancient and modern aspects of the Hebrew language, along with the cultural significance of Israel.",
         "rating": 4.3,
         "topRated": false,
-        "numberOfStudents": 37
+        "numberOfStudents": 37,
+        "email": "nguyenminh@gmail.com",
+        "availableSeat": 13
     },
     {
         "languageImage": "https://i.ibb.co/q9xRFzX/1665466981.png",
@@ -217,6 +255,8 @@
         "courseDetails": "Immerse yourself in the melodious Vietnamese language and explore the rich cultural heritage of Vietnam.",
         "rating": 4.0,
         "topRated": false,
-        "numberOfStudents": 34
+        "numberOfStudents": 34,
+        "email": "jannovak@gmail.com",
+        "availableSeat": 16
     }
 ]
