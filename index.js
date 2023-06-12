@@ -162,6 +162,15 @@ async function run() {
             res.send(result)
         })
 
+        // payment history  routes
+
+        app.get('/paymentHistory', verifyJwt, async (req, res) => {
+            const email = req.decoded.email;
+            if (email) {
+                const result = await enrolledClassesCollection.find({ email }).toArray()
+                res.send(result)
+            }
+        })
 
 
 
