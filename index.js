@@ -5,8 +5,10 @@ const port = process.env.PORT || 5000
 require('dotenv').config()
 const jwt = require('jsonwebtoken');
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+const stripe = require("stripe")(process.env.SECRET_KEY_OF_STRIP);
 
 // middleware
+app.use(express.static("public"));
 app.use(cors())
 app.use(express.json())
 
@@ -54,6 +56,7 @@ async function run() {
         const TestimonialsCollection = client.db('SummerCamp').collection('Testimonials');
         const UsersCollection = client.db('SummerCamp').collection('Users');
         const selectedClassesCollection = client.db('SummerCamp').collection('SelectedClasses');
+        const enrolledClassesCollection = client.db('SummerCamp').collection('enrolledClasses');
 
         // routes
         app.post('/jwt', (req, res) => {
@@ -123,9 +126,44 @@ async function run() {
             const id = req.params.id
             const query = { _id: new ObjectId(id) }
             const result = await selectedClassesCollection.deleteOne(query)
-     
             res.send(result)
         })
+
+
+        // Payments Routes
+        // Create payment intent
+        app.post('/create-payment-intent', verifyJwt, async (req, res) => {
+            const { price } = req.body;
+            const amount = price * 100;
+            const paymentIntent = await stripe.paymentIntents.create({
+                amount: amount,
+                currency: 'usd',
+                payment_method_types: ["card"]
+            })
+            res.send({
+                clientSecret: paymentIntent.client_secret
+            })
+        })
+
+        // payment information
+        app.post('/payment', verifyJwt, async (req, res) => {
+            const payment = req.body;
+            const UserEmail = req.decoded.email
+            const paymentEmail = payment.email
+            const result = await enrolledClassesCollection.insertOne(payment)
+
+            if (result && UserEmail === paymentEmail) {
+                const query = { StudentEmail: UserEmail }
+                if (query) {
+                    await selectedClassesCollection.deleteMany(query)
+                }
+
+            }
+            res.send(result)
+        })
+
+
+
 
         // await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
