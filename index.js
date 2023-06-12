@@ -4,15 +4,28 @@ const cors = require('cors')
 const port = process.env.PORT || 5000
 require('dotenv').config()
 const jwt = require('jsonwebtoken');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 // middleware
 app.use(cors())
 app.use(express.json())
 
-// const verifyJwt = () => {
+const verifyJwt = (req, res, next) => {
+    const authorization = req.headers.authorization;
+    if (!authorization) {
+        return res.status(401).send({ error: true, message: 'Authorization Required' })
+    }
+    const token = authorization.split(' ')[1]
 
-// } 
+    jwt.verify(token, `${process.env.ACCESS_TOKEN}`, (err, decoded) => {
+        if (err) {
+            return res.status(401).send({ error: true, message: 'Unauthorized Access Token' });
+        }
+        req.decoded = decoded;
+        next()
+    });
+
+}
 
 const uri = 'mongodb://127.0.0.1:27017/'
 const client = new MongoClient(uri);
@@ -43,10 +56,10 @@ async function run() {
         const selectedClassesCollection = client.db('SummerCamp').collection('SelectedClasses');
 
         // routes
-        app.get('/jwt', (req, res) => {
+        app.post('/jwt', (req, res) => {
             const email = req.body;
             const token = jwt.sign(email, `${process.env.ACCESS_TOKEN}`, { expiresIn: '1h' });
-            res.send(token);
+            res.send({ token });
         })
 
 
@@ -64,7 +77,7 @@ async function run() {
 
 
         // Users Data post/create
-        app.post('/user', async (req, res) => {
+        app.post('/user', verifyJwt, async (req, res) => {
             const user = req.body;
             const email = user.email
             const query = { email: email }
@@ -87,13 +100,32 @@ async function run() {
 
 
         // Selected classes
-        app.post('/mySelectedClasses', async (req, res) => {
+        app.post('/mySelectedClass', verifyJwt, async (req, res) => {
             const classes = req.body
-            const result = await selectedClassesCollection.insertOne(classes)
+            const bookedClass = classes.bookedClass
+            const query = await selectedClassesCollection.findOne({ bookedClass })
+            if (query) {
+                return res.send({ error: true, message: "This Items is Already booked" })
+            } else {
+                const result = await selectedClassesCollection.insertOne(classes)
+                res.send(result)
+            }
+
+        })
+        app.get('/selectedClasses/:email', verifyJwt, async (req, res) => {
+            const StudentEmail = req.params.email;
+            const result = await selectedClassesCollection.find({ StudentEmail }).toArray()
 
             res.send(result)
         })
-
+        // delete selecterd class
+        app.delete('/selectedClasses/:id', verifyJwt, async (req, res) => {
+            const id = req.params.id
+            const query = { _id: new ObjectId(id) }
+            const result = await selectedClassesCollection.deleteOne(query)
+     
+            res.send(result)
+        })
 
         // await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
