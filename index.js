@@ -310,6 +310,50 @@ async function run() {
 
             res.send(result);
         });
+
+
+
+
+        // Admin Routes
+
+        app.get("/manageClasses", verifyJwt, async (req, res) => {
+            try {
+                // Retrieve all users' emails whome role is Instructor from the UsersCollection
+                const emails = await UsersCollection.distinct("email", { role: "Instructor" });
+
+
+
+                // Retrieve all posted data from the LanguageCollection for the obtained emails
+                const result = await LanguageCollection.find({ email: { $in: emails } }).toArray();
+
+                res.send(result);
+            } catch (error) {
+                console.error("Failed to fetch data:", error);
+                res.status(500).send("Failed to fetch data");
+            }
+        });
+
+
+        // update status
+        app.patch('/updateStatus/:id', verifyJwt, async (req, res) => {
+            const id = req.params.id
+            const newStatus = req.body
+            console.log(newStatus);
+
+            const query = { _id: new ObjectId(id) }
+            const updateDoc = {
+                $set: {
+                    status: newStatus.status
+                }
+            }
+            console.log(updateDoc);
+            const result = await LanguageCollection.updateOne(query, updateDoc)
+
+            res.send(result)
+
+        })
+
+
         // await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
