@@ -29,19 +29,19 @@ const verifyJwt = (req, res, next) => {
 
 }
 
-const uri = 'mongodb://127.0.0.1:27017/'
-const client = new MongoClient(uri);
+// const uri = 'mongodb://127.0.0.1:27017/'
+// const client = new MongoClient(uri);
 
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@atiqurrahman.ac8ixft.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@atiqurrahman.ac8ixft.mongodb.net/?retryWrites=true&w=majority`;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-// const client = new MongoClient(uri, {
-//     serverApi: {
-//         version: ServerApiVersion.v1,
-//         strict: true,
-//         deprecationErrors: true,
-//         newUrlParser: true
-//     }
-// });
+const client = new MongoClient(uri, {
+    serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+        newUrlParser: true
+    }
+});
 
 
 
@@ -279,7 +279,7 @@ async function run() {
             }
         })
 
-        // All Classes That I posted
+        // All Classes That Instructor posted
         app.get('/MyClasses', verifyJwt, async (req, res) => {
             const email = req.decoded.email
 
@@ -317,13 +317,14 @@ async function run() {
 
         // Admin Routes
 
-        app.get("/manageClasses", verifyJwt, async (req, res) => {
+        app.get("/manageClasses", async (req, res) => {
             try {
                 // Retrieve all users emails whom role is Instructor from the UsersCollection
-                const emails = await UsersCollection.distinct("email", { role: "Instructor" });
+                // with role "Instructor" from the UsersCollection
+                const users = await UsersCollection.find({ role: "Instructor" }).toArray();
 
-
-
+                // Extract emails from the obtained users
+                const emails = users.map(user => user.email);
                 // Retrieve all posted data from the LanguageCollection for the obtained emails
                 const result = await LanguageCollection.find({ email: { $in: emails } }).toArray();
 
@@ -394,7 +395,7 @@ async function run() {
 
 
         // await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        // console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
 
     }
