@@ -319,7 +319,7 @@ async function run() {
 
         app.get("/manageClasses", verifyJwt, async (req, res) => {
             try {
-                // Retrieve all users' emails whome role is Instructor from the UsersCollection
+                // Retrieve all users emails whom role is Instructor from the UsersCollection
                 const emails = await UsersCollection.distinct("email", { role: "Instructor" });
 
 
