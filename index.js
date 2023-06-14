@@ -105,6 +105,7 @@ async function run() {
         })
 
 
+
         // Selected classes
         app.post('/mySelectedClass', verifyJwt, async (req, res) => {
             const classes = req.body
@@ -173,7 +174,7 @@ async function run() {
                 const query = { email: email };
 
                 const enrolledClasses = await enrolledClassesCollection.find(query).toArray();
-                console.log(enrolledClasses);
+                // console.log(enrolledClasses);
                 const bookedIds = enrolledClasses.map(classItem => classItem.BookedId);
 
 
@@ -338,7 +339,7 @@ async function run() {
         app.patch('/updateStatus/:id', verifyJwt, async (req, res) => {
             const id = req.params.id
             const newStatus = req.body
-            console.log(newStatus);
+            // console.log(newStatus);
 
             const query = { _id: new ObjectId(id) }
             const updateDoc = {
@@ -346,11 +347,49 @@ async function run() {
                     status: newStatus.status
                 }
             }
-            console.log(updateDoc);
+            // console.log(updateDoc);
             const result = await LanguageCollection.updateOne(query, updateDoc)
 
             res.send(result)
 
+        })
+
+        // const update or added feedback of admin 
+        app.put('/feedback/:id', verifyJwt, async (req, res) => {
+            const id = req.params.id;
+            const feedback = req.body;
+            console.log(feedback);
+            const query = { _id: new ObjectId(id) }
+
+            const updateDoc = {
+                $set: {
+                    feedback: feedback.feedback
+                }
+            }
+            // main task
+            const result = await LanguageCollection.updateOne(query, updateDoc, { upsert: true })
+            res.send(result)
+        })
+
+        // manage users get users
+        app.get('/users', verifyJwt, async (req, res) => {
+            const result = await UsersCollection.find({}).toArray()
+            res.send(result)
+        })
+
+        // update users role
+        app.patch('/updateRole/:id', verifyJwt, async (req, res) => {
+            const id = req.params.id;
+            const newRole = req.body
+            const query = { _id: new ObjectId(id) }
+            const updateDoc = {
+                $set: {
+                    role: newRole.role
+                }
+            }
+
+            const result = await UsersCollection.updateOne(query, updateDoc)
+            res.send(result)
         })
 
 
